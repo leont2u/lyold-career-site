@@ -9,7 +9,7 @@ export default function Footer() {
       {/* subtle glow */}
       <div className="pointer-events-none absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_0.6px,transparent_0.6px)] bg-size-[7px_7px]" />
 
-      <div className="relative z-10 mx-auto max-w-8xl px-6 py-16 sm:px-10 lg:px-16">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-16">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div>
