@@ -38,10 +38,6 @@ export default function AboutHero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <p className="mb-4 text-[11px] uppercase tracking-[0.4em] text-white/40">
-            About Lyold
-          </p>
-
           <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Visual Storytelling
           </h1>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Film, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import {
   AnimatePresence,
@@ -10,6 +10,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -70,7 +71,7 @@ export default function Navbar() {
             className="relative flex items-center justify-between rounded-full px-4 backdrop-blur-md sm:px-6"
           >
             {/* subtle background */}
-            <div className="pointer-events-none absolute inset-0 rounded-full bg-[linear-gradient(90deg,rgba(0,153,255,0.08),rgba(255,80,80,0.08),rgba(0,0,0,0.08))]" />
+            <div className="pointer-events-none absolute inset-0 rounded-full " />
             <div className="pointer-events-none absolute inset-1px rounded-full bg-black/45" />
 
             {/* left */}
@@ -86,9 +87,15 @@ export default function Navbar() {
                   borderRadius: isCollapsed ? 999 : 12,
                 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="flex shrink-0 items-center justify-center border border-white/10 bg-white/5"
+                className="flex shrink-0 items-center justify-center  "
               >
-                <Film className="h-5 w-5 text-white sm:h-6 sm:w-6" />
+                <Image
+                  src="/profile-photo.png"
+                  alt="Logo"
+                  width={44}
+                  height={44}
+                  className="rounded-full"
+                />
               </motion.div>
 
               <div className="min-w-0 leading-none">
